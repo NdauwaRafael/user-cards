@@ -6,11 +6,16 @@ import SearchUser from './components/SearchUser/SearchUser'
 class App extends Component {
     state = {
         cards: []
-    }
+    };
+    fetchCardsData = (card)=>{
+        this.setState(prevState=>({
+            cards: prevState.cards.concat(card)
+        }))
+    };
     render() {
         return (
             <div className="App">
-                <SearchUser />
+                <SearchUser onFormSubmit={this.fetchCardsData} />
                 <CardList cards={this.state.cards}/>
             </div>
         );
