@@ -6,10 +6,10 @@ import './card.css';
 const Card = (props)=>{
     return (
         <div className="card">
-            <img src="http://placehold.it/75" alt=""/>
+            <img src={props.avatar_url} alt=""/>
             <div className="info">
-                <div className="info__title">Name Here...</div>
-                <div>Company Name here...</div>
+                <div className="info__title">{props.name}</div>
+                <div>{props.company}</div>
             </div>
         </div>
     )

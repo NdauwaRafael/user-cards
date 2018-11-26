@@ -4,9 +4,9 @@
 import React from 'react';
 import Card from '../Card/Card'
 
-const CardList = (props)=>{
+const CardList = (props) => {
     return (
-        <Card/>
+        props.cards.map(card => <Card {...card}/>)
     )
 };
 

@@ -13,3 +13,7 @@
     display: flex;
     margin: 1em;
 }
+.card img {
+    width: 75px;
+    height: 75px;
+}
