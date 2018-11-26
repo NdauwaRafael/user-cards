@@ -1,0 +1,15 @@
+.info {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.info__title {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    margin: 1em;
+}
