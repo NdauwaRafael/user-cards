@@ -5,7 +5,7 @@ import React from 'react';
 import './card.css';
 const Card = (props)=>{
     return (
-        <div className="card">
+        <div className="card" >
             <img src={props.avatar_url} alt=""/>
             <div className="info">
                 <div className="info__title">{props.name}</div>

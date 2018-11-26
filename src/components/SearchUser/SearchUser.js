@@ -12,6 +12,9 @@ import axios from 'axios';
          axios.get(`https://api.github.com/users/${this.state.userName}`)
              .then(response => {
                     this.props.onFormSubmit(response.data);
+                    this.setState({
+                        userName: ''
+                    });
              })
      };
      handleChange = (event)=>{

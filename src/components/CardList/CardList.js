@@ -6,7 +6,7 @@ import Card from '../Card/Card'
 
 const CardList = (props) => {
     return (
-        props.cards.map(card => <Card {...card}/>)
+        props.cards.map(card => <Card key={card.id} {...card}/>)
     )
 };
 
