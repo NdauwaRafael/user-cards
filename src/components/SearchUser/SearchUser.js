@@ -3,11 +3,22 @@
  */
 import React, {Component} from 'react';
  class SearchUser extends Component {
+     state = {
+         userName: ''
+     };
+     handleSubmit =  (event)=> {
+         event.preventDefault();
+     };
+     handleChange = (event)=>{
+         this.setState({
+             userName: event.target.value
+         });
+     };
      render(){
          return (
              <div>
-                 <form action="">
-                     <input type="text" placeholder="Github Username"/>
+                 <form onSubmit={this.handleSubmit}>
+                     <input type="text" placeholder="Github Username" value={this.state.userName} onChange={this.handleChange} required/>
                      <button type="submit">Add card</button>
                  </form>
              </div>
